@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.petproject.peachmusic.R
 
@@ -23,7 +24,7 @@ class HomeMenuFragment : Fragment() {
         val test_button = view.findViewById<Button>(R.id.play_button)
 
         test_button.setOnClickListener {
-
+            Toast.makeText(requireContext(), "You click on the button!!!", Toast.LENGTH_SHORT).show()
         }
     }
 }
